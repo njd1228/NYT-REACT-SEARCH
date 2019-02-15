@@ -3,6 +3,8 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const logger = require("morgan");
 const mongoose = require("mongoose");
+const request = require("request"); //Makes http calls
+const cheerio = require("cheerio"); //Scraper
 
 // Set mongoose to leverage built in JavaScript ES6 Promises
 mongoose.Promise = Promise;
